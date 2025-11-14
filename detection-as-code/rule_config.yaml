@@ -1,3 +1,8 @@
+PROMPTFLUX_LOG_FILE_CREATION_elevate2025:
+  alerting: true
+  enabled: true
+  run_frequency: LIVE
+  type: SINGLE_EVENT
 Airstalk_File_Creation:
   alerting: false
   archive_time: null
@@ -2050,3 +2055,20 @@ wmic_ntds_dit_T1003_003_cisa_report:
   revision_id: v_1758264123_333823000
   run_frequency: LIVE
   type: SINGLE_EVENT
+<environment_details>
+# Visual Studio Code Visible Files
+detection-as-code/rule_config.yaml
+
+# Visual Studio Code Open Tabs
+detection-as-code/rules/PROMPTFLUX_LOG_FILE_CREATION.yaral
+detection-as-code/rule_config.yaml
+
+# Current Time
+11/14/2025, 6:51:24 PM (Australia/Melbourne, UTC+11:00)
+
+# Context Window Usage
+389,937 / 1,048.576K tokens used (37%)
+
+# Current Mode
+ACT MODE
+</environment_details>
