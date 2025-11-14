@@ -1,0 +1,23 @@
+rule Airstalk_C2_Communication {
+  meta:
+    author = "Cline"
+    description = "Detects C2 communication patterns associated with the Airstalk malware family. This rule looks for HTTP POST requests to AirWatch/Workspace ONE API endpoints with a specific JSON payload structure used by Airstalk for C2."
+    reference = "https://unit42.paloaltonetworks.com/new-windows-based-malware-family-airstalk/"
+    severity = "High"
+    priority = "High"
+
+  events:
+    $http.metadata.event_type = "NETWORK_HTTP"
+    $http.network.http.method = "POST"
+    (
+      re.regex($http.network.http.url, `.*/api/mdm/devices/.*`) or
+      re.regex($http.network.http.url, `.*/api/mam/blobs/uploadblob.*`)
+    )
+    // Look for the specific JSON structure in the request body
+    re.regex($http.network.http.request.body, `"Application"\\s*:\\s*"services.exe"`) and
+    re.regex($http.network.http.request.body, `"ApplicationGroup"\\s*:\\s*"services"`) and
+    re.regex($http.network.http.request.body, `"Value"`)
+
+  condition:
+    $http
+}

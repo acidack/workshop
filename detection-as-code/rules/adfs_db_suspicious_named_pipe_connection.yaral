@@ -9,6 +9,8 @@ rule adfs_db_suspicious_named_pipe_connection {
     data_source = "sysmon"   
     severity = "Medium"
     priority = "Medium"
+    tactic = "TA0006"
+    technique = "T1003"
 
  events:
     $process.metadata.base_labels.namespaces = "LogStory"
