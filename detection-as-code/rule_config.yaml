@@ -1,3 +1,8 @@
+PROMPTFLUX_LOG_FILE_CREATION:
+  alerting: true
+  enabled: true
+  run_frequency: LIVE
+  type: SINGLE_EVENT
 Airstalk_File_Creation:
   alerting: false
   archive_time: null
