@@ -1,3 +1,27 @@
+Airstalk_File_Creation:
+  alerting: false
+  archive_time: null
+  archived: false
+  create_time: '2025-11-14T01:22:52.949055Z'
+  enabled: false
+  id: ru_1e3eae8b-8f20-4d88-94e0-24f89f36ca49
+  resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_1e3eae8b-8f20-4d88-94e0-24f89f36ca49
+  revision_create_time: '2025-11-14T01:22:52.949055Z'
+  revision_id: v_1763083372_949055000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+Airstalk_PowerShell_Activity:
+  alerting: false
+  archive_time: null
+  archived: false
+  create_time: '2025-11-14T01:23:20.644479Z'
+  enabled: false
+  id: ru_2d1f16c8-6445-46f3-be91-ef5f0b48277a
+  resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_2d1f16c8-6445-46f3-be91-ef5f0b48277a
+  revision_create_time: '2025-11-14T01:23:20.644479Z'
+  revision_id: v_1763083400_644479000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
 PyRDP_Toolkit_UNC5837:
   alerting: false
   archive_time: null
