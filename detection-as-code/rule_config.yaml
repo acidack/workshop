@@ -1,6 +1,8 @@
-PROMPTFLUX_LOG_FILE_CREATION
-  alerting: false
-  enabled: false
+PROMPTFLUX_LOG_FILE_CREATION:
+  alerting: true
+  enabled: true
+  run_frequency: LIVE
+  type: SINGLE_EVENT
 PyRDP_Toolkit_UNC5837:
   alerting: false
   archive_time: null
