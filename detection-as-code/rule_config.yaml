@@ -3,11 +3,6 @@ PROMPTFLUX_LOG_FILE_CREATION_elevate2025:
   enabled: true
   run_frequency: LIVE
   type: SINGLE_EVENT
-PROMPTFLUX_LOG_FILE_CREATION:
-  alerting: true
-  enabled: true
-  run_frequency: LIVE
-  type: SINGLE_EVENT
 Airstalk_File_Creation:
   alerting: false
   archive_time: null
@@ -30,6 +25,18 @@ Airstalk_PowerShell_Activity:
   resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_2d1f16c8-6445-46f3-be91-ef5f0b48277a
   revision_create_time: '2025-11-14T01:23:20.644479Z'
   revision_id: v_1763083400_644479000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+PROMPTFLUX_LOG_FILE_CREATION:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2025-11-14T07:44:40.496815Z'
+  enabled: true
+  id: ru_27aef9c1-6571-4c91-b40d-94bc15c8936a
+  resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_27aef9c1-6571-4c91-b40d-94bc15c8936a
+  revision_create_time: '2025-11-14T07:44:40.496815Z'
+  revision_id: v_1763106280_496815000
   run_frequency: LIVE
   type: SINGLE_EVENT
 PyRDP_Toolkit_UNC5837:
@@ -2048,3 +2055,20 @@ wmic_ntds_dit_T1003_003_cisa_report:
   revision_id: v_1758264123_333823000
   run_frequency: LIVE
   type: SINGLE_EVENT
+<environment_details>
+# Visual Studio Code Visible Files
+detection-as-code/rule_config.yaml
+
+# Visual Studio Code Open Tabs
+detection-as-code/rules/PROMPTFLUX_LOG_FILE_CREATION.yaral
+detection-as-code/rule_config.yaml
+
+# Current Time
+11/14/2025, 6:51:24 PM (Australia/Melbourne, UTC+11:00)
+
+# Context Window Usage
+389,937 / 1,048.576K tokens used (37%)
+
+# Current Mode
+ACT MODE
+</environment_details>
