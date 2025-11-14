@@ -1,3 +1,6 @@
+PROMPTFLUX_LOG_FILE_CREATION
+  alerting: false
+  enabled: false
 PyRDP_Toolkit_UNC5837:
   alerting: false
   archive_time: null
