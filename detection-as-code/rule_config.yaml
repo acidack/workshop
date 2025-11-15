@@ -1,3 +1,8 @@
+unc5142_etherhiding_clearshort_elevate2025:
+  alerting: true
+  enabled: true
+  run_frequency: LIVE
+  type: SINGLE_EVENT
 PROMPTFLUX_LOG_FILE_CREATION_elevate2025:
   alerting: true
   enabled: true
