@@ -17,10 +17,6 @@ rule mtrends_2025_unc3886_virtualpita_activity {
     $net.target.port = 2233
     $net.principal.ip = $principal_ip
     $net.target.ip = $target_ip
-    
-    // VirtualPita is often associated with ESXi hosts
-    // This can be further refined if ESXi logs are available specifically
-    $net.target.asset.asset_type = "HYPERVISOR"
 
   match:
     $principal_ip, $target_ip over 5m
@@ -29,7 +25,7 @@ rule mtrends_2025_unc3886_virtualpita_activity {
     $risk_score = 90
     $principal_hostname = array_distinct($net.principal.hostname)
     $target_hostname = array_distinct($net.target.hostname)
-    $event_count = count($net.metadata.id)
+    $event_count = count_distinct($net.metadata.id)
 
   condition:
     $net
