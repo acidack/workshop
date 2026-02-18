@@ -1,7 +1,7 @@
 rule Airstalk_File_Creation {
   meta:
     author = "Gemini"
-    description = "Detects the creation of files associated with the Airstalk malware."
+    description = "Detects the creation of files associated with the Airstalk malware. This rule is based on the Airstalk malware family."
     threat_name = "Airstalk"
     reference = "https://unit42.paloaltonetworks.com/new-windows-based-malware-family-airstalk/"
     version = "1.0"
