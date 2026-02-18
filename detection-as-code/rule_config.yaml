@@ -22,9 +22,6 @@ Airstalk_PowerShell_Activity:
   revision_id: v_1763083400_644479000
   run_frequency: LIVE
   type: SINGLE_EVENT
-mtrends_2025_unc3886_virtualpita_activity:
-  alerting: true
-  enabled: true
 PROMPTFLUX_LOG_FILE_CREATION:
   alerting: true
   archive_time: null
@@ -1199,6 +1196,18 @@ mitre_attack_T1570_suspicious_command_psexec:
   resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_95dfa8a8-6aa6-4e02-88f3-d0857c20c3eb
   revision_create_time: '2025-09-19T06:42:45.870911Z'
   revision_id: v_1758264165_870911000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+mtrends_2025_unc3886_virtualpita_activity:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2026-02-18T11:33:35.013439Z'
+  enabled: true
+  id: ru_7de1ae3a-0ae9-45de-acdc-629a0438f134
+  resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_7de1ae3a-0ae9-45de-acdc-629a0438f134
+  revision_create_time: '2026-02-18T11:33:35.013439Z'
+  revision_id: v_1771414415_013439000
   run_frequency: LIVE
   type: SINGLE_EVENT
 mtrends_2025_unc5221_ivanti_exploit_cve_2024_21887:
