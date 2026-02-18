@@ -24,16 +24,7 @@ Airstalk_PowerShell_Activity:
   type: SINGLE_EVENT
 mtrends_2025_unc3886_virtualpita_activity:
   alerting: true
-  archive_time: null
-  archived: false
-  create_time: '2026-02-18T11:18:00Z'
   enabled: true
-  id: ru_unc3886_mtrends2025_001
-  resource_name: projects/484332941014/locations/us/instances/35e17b64-994a-48c2-8404-c90d9f5471db/rules/ru_unc3886_mtrends2025_001
-  revision_create_time: '2026-02-18T11:18:00Z'
-  revision_id: v_1
-  run_frequency: LIVE
-  type: SINGLE_EVENT
 PROMPTFLUX_LOG_FILE_CREATION:
   alerting: true
   archive_time: null
