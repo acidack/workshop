@@ -1,0 +1,36 @@
+rule mtrends_2025_unc3886_virtualpita_activity {
+  meta:
+    author = "Antigravity AI"
+    description = "Detects VirtualPita backdoor activity associated with UNC3886. VirtualPita is a passive backdoor often deployed on VMware ESXi hosts, typically listening on TCP port 2233."
+    rule_id = "ru_unc3886_mtrends2025_001"
+    rule_name = "M-Trends 2025 UNC3886 VirtualPita Activity"
+    mitre_attack_tactic = "TA0003"
+    mitre_attack_technique = "T1547"
+    type = "alert"
+    data_source = "network traffic logs"
+    severity = "Critical"
+    priority = "High"
+    reference = "https://services.google.com/fh/files/misc/m-trends-2025-en.pdf"
+
+  events:
+    $net.metadata.event_type = "NETWORK_CONNECTION"
+    $net.target.port = 2233
+    $net.principal.ip = $principal_ip
+    $net.target.ip = $target_ip
+    
+    // VirtualPita is often associated with ESXi hosts
+    // This can be further refined if ESXi logs are available specifically
+    $net.target.asset.asset_type = "HYPERVISOR"
+
+  match:
+    $principal_ip, $target_ip over 5m
+
+  outcome:
+    $risk_score = 90
+    $principal_hostname = array_distinct($net.principal.hostname)
+    $target_hostname = array_distinct($net.target.hostname)
+    $event_count = count($net.metadata.id)
+
+  condition:
+    $net
+}
